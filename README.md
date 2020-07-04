@@ -1,1 +1,1 @@
-# Methods for Pruning Neural Networks
+# Methods for Structured Pruning of Neural Networks
