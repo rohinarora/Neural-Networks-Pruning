@@ -1,3 +1,16 @@
+### Requirements
+Main dependency is pytorch :heart:
+
+```conda env create --name envname --file=environments.yml```
+
+### Data
+
+```source create_dataset.sh```
+
+Creates test and train DIR. Uses 1000 images for training and 400 for test. Feel free to change this by updating the script
+
+### Code
+
 ### Key points
 
 *  Based on the paper [Pruning Convolutional Neural Networks for Resource Efficient Inference
@@ -15,16 +28,3 @@
 * Taylor pruning criterion a good heuristic.
 * Greedy criteria based on Taylor expansion that approximates the change in the cost function induced by pruning network parameters.
 * This repo is inspired by Jacob's nice [blog post](https://jacobgil.github.io/deeplearning/pruning-deep-learning)
-
-### Requirements
-Main dependency is pytorch :heart:
-
-```conda env create --name envname --file=environments.yml```
-
-### Data
-
-```source create_dataset.sh```
-
-Creates test and train DIR. Uses 1000 images for training and 400 for test. Feel free to change this by updating the script
-
-### Code
