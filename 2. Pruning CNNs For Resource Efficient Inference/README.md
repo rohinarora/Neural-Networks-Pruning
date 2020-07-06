@@ -31,7 +31,7 @@ Main dependency is pytorch. Based on python 3.7
 * Pruning criterion
   * Oracle pruning - Best case greedy. Computationally expensive. Infeasible.
   * Taylor expansion (Taylor pruning criterion a good heuristic)
-  * minimize equation 3 given in [paper](https://arxiv.org/abs/1611.06440)
+    * minimize equation 3 given in [paper](https://arxiv.org/abs/1611.06440)
     * This equation approximates the change in cost function by pruning a single filter/feature map *hi*
     ![](images/4.png)
     * Computation of final expression after simplification of taylor expansion is  product of the activation and the gradient of the cost function w.r.t. to the activation.
