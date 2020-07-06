@@ -23,6 +23,7 @@ Main dependency is pytorch. Based on python 3.7
   * In contrast, this approach relies on global rescaling of criteria for all layers and does not require sensitivity estimation.
   * Based on greedy criteria that approximates the change in the cost function induced by pruning network parameters
 * Global optima of pruning combinatorially hard/exponential/infeasible. Use greedy methods.
+![](images/6.png)
 * Algorithm-> (success hinges on employing the right pruning criterion)
   * Fine-tune the network until convergence on the target task
   * Alternate iterations of pruning and further fine-tuning. Feature maps are ranked globally, and then pruned
