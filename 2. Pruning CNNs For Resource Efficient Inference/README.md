@@ -7,7 +7,8 @@ Main dependency is pytorch. Based on python 3.7
 
 ```source create_dataset.sh```
 
-Creates test and train DIR. Uses 1000 images for training and 400 for test. Feel free to change this by updating the script
+* Creates test and train DIR. Uses 1000 images for training and 400 for test. Feel free to change this by updating the script
+* Requires kaggle CLI api. Alternatively download manually from https://www.kaggle.com/c/dogs-vs-cats/data and use then use the above script (commenting the kaggle api call)
 
 ### Code
 
@@ -42,5 +43,6 @@ Creates test and train DIR. Uses 1000 images for training and 400 for test. Feel
   * Layer wise L2 norm applied to equation 8. The scale of raw values varies with depth of layer. Layer norm normalizes them to be on same scale.
   ![](images/2.png)
   * Optionally further regularized by FLOP regularization. FLOPs regularization takes into account that different layers require different amounts of computation. Encourages layers contributing higher FLOPs to be pruned more (scaled by regularization factor).
+    * Layers which have high flops will have lower taylor score and will be promoted to prune
   ![](images/1.png)
 * Inspired by Jacob's nice [blog post](https://jacobgil.github.io/deeplearning/pruning-deep-learning)
