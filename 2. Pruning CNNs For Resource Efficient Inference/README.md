@@ -1,5 +1,5 @@
 ### Requirements
-Main dependency is pytorch :heart:
+Main dependency is pytorch. Based on python 3.7
 
 ```conda env create --name envname --file=environments.yml```
 
