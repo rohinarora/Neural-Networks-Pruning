@@ -49,5 +49,7 @@ pruner_obj.prune(percentage_to_prune=70, num_filters_to_prune_per_iteration=32)
 ### Key points
 *  Based on the paper [Pruning Convolutional Neural Networks for Resource Efficient Inference
 ](https://arxiv.org/abs/1611.06440)
-* Refer [this](https://github.com/rohinarora/Deep-Learning-Papers/blob/master/main/pcnnfrefi.md) for key points
+* Refer [this](https://github.com/rohinarora/Deep-Learning-Papers/blob/master/main/pcnnfrefi.md) for key points in the algorithm 
+
+##### Footnotes
 * Inspired by Jacob's nice [blog post](https://jacobgil.github.io/deeplearning/pruning-deep-learning)
